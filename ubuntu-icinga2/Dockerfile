@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Peter Mueller "https://github.com/pmalsenz"
 
 RUN apt-get update
-RUN apt-get install -y ssh wget curl vim nano multitail moreutils nmap iftop htop ncftp bzip2 less lsof screen aptitude mariadb-client mariadb-server
+RUN apt-get install -y tzdata locales ssh wget curl vim nano multitail moreutils nmap iftop htop ncftp bzip2 less lsof screen aptitude mariadb-client mariadb-server
 
 RUN echo "deb http://packages.icinga.com/ubuntu icinga-xenial main" >/etc/apt/sources.list.d/icinga2.list
 RUN echo "deb-src http://packages.icinga.com/ubuntu icinga-xenial main" >> /etc/apt/sources.list.d/icinga2.list
